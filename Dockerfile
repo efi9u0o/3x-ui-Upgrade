@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && ln -sf /usr/share/zoneinfo/Asia/Tehran /etc/localtime \
     && rm -rf /var/lib/apt/lists/*
 
-# دانلود و نصب X-UI v3.6.0
+# دانلود و نصب X-UI v3.5.0
 RUN curl -L https://github.com/sh7CBAC/Heimdall/releases/download/v1.2.0/x-ui-linux-amd64.tar.gz -o /tmp/x-ui.tar.gz \
     && tar -xzf /tmp/x-ui.tar.gz -C /usr/local/ \
     && rm /tmp/x-ui.tar.gz \
